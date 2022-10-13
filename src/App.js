@@ -12,7 +12,7 @@ import ExerciseDetail from './pages/ExerciseDetail';
 
 function App() {
   return (
-    <Box>
+    <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
       <Header />
       <Routes>
       <Route path="/" element={<Home />} />
