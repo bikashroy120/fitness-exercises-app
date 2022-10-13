@@ -5,18 +5,18 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
-import ExersiceDeteles from './pages/ExersiceDeteles/ExersiceDeteles';
 import './App.css'
+import ExerciseDetail from './pages/ExerciseDetail';
 
 
 
 function App() {
   return (
-    <Box >
+    <Box>
       <Header />
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path=":teamId" element={<ExersiceDeteles />} />
+      <Route path="/exercise/:id" element={<ExerciseDetail />} />
     </Routes>
     </Box>
   );
